@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "eqeqeq": "error",
+    "curly": "error",
+    "quotes": ["error", "single"],
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "no-multi-spaces": "error",
+    "no-empty": "error",
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "always"],
+    "wrap-iife": ["error", "inside"],
+    "linebreak-style": "error",
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "no-spaced-func": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-template": "error",
+    "object-curly-spacing": ["error", "always"],
+    "prefer-arrow-callback": "error",
+    "object-shorthand": ["error", "always"],
+    "no-shadow": "error",
+    "brace-style": "error",
+    "arrow-body-style": ["error", "as-needed"],
+
+    "import/no-unresolved": ["error", { "commonjs": true }]
+  },
+  "globals": {
+    "punk": true
+  }
+}
